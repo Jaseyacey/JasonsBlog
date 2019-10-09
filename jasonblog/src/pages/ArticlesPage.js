@@ -10,7 +10,7 @@ const ArticlePage = ({ match }) => {
     const name = match.params.name;
     const article = ArticleContent.find(article => article.name === name);
 
-    const [articleInfo, setArticleInfo] = useState({ upvotes: 1, comments: [] });
+    const [articleInfo, setArticleInfo] = useState({ upvotes: 0, comments: [] });
 
     useEffect (() => {
         const fetchData = async () => {
