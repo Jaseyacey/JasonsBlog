@@ -10,6 +10,8 @@ import ArticlesListPage from './pages/ArticlesListPage';
 import ArticlesPage from './pages/ArticlesPage';
 import NavBar from './NavBar';
 import notFoundPage from './pages/notFoundPage';  
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.css';
 
 

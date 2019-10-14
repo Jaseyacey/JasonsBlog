@@ -54,16 +54,16 @@ const articles = [
             consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
         ]
     },  {
-        name: 'Why-I-code',
-        title: 'Computer languages fascinate me',
+        name: 'Hello-World',
+        title: 'Hi World',
         content: [
             'It worked!!! The satisfaction of finding this sentence, is why I code'
         ]
     }, {
-        name: 'hello',
-        title: 'hello',
+        name: 'JASON',
+        title: 'JASON',
         content: [
-            ''
+            'It worked!!! The satisfaction of finding this sentence, is why I code'
         ]
     },
 
