@@ -3,10 +3,10 @@ import React from 'react';
 const HomePage = () => (
     <>
 <div class jumbotron>
-    <h1>Hello, welcome to my blog!</h1>
+    <h1>Welcome</h1>
 </div>
     <p>
-
+        
         
     </p>
     <p>

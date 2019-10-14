@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import AddCommentForm from '../components/AddCommentForm';
+import React, { useState, useEffect } from 'react';
 import ArticlesList from '../components/ArticlesList';
 import CommentsList from '../components/CommentsList';
 import UpvotesSection from '../components/UpvotesSection';
+import AddCommentForm from '../components/AddCommentForm'
+import notFoundPage from './notFoundPage';
 import ArticleContent from './Article-Content';
 
 const ArticlePage = ({ match }) => {
@@ -13,6 +14,7 @@ const ArticlePage = ({ match }) => {
 
     useEffect(() => {
         const fetchData = async () => {
+            // const result = await fetch(`/api/articles/${name}`);
             const result = await fetch(`/api/articles/${name}`);
             const body = await result.json();
             setArticleInfo(body);
@@ -40,3 +42,9 @@ const ArticlePage = ({ match }) => {
 }
 
 export default ArticlePage;
+
+
+
+
+
+
