@@ -65,7 +65,11 @@ const articles = [
         content: [
             'It worked!!! The satisfaction of finding this sentence, is why I code'
         ]
-    },
+    }, {
+        name: 'Patriots',
+        title: 'Undefeated',
+        content: 'The patriots are going 16 and 0. ',
+    }
 
 ];
 

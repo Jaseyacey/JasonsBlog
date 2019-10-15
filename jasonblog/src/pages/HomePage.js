@@ -2,7 +2,7 @@ import React from 'react';
 
 const HomePage = () => (
     <>
-<div class jumbotron>
+<div className>
     <h1>Welcome</h1>
 </div>
     <p>
