@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css';
 import {
   BrowserRouter as Router,
   Route, 
@@ -11,9 +12,8 @@ import ArticlesPage from './pages/ArticlesPage';
 import NavBar from './NavBar';
 import notFoundPage from './pages/notFoundPage';  
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import './App.css';
-
+const passport = require("passport");
+const Users = require("./models/User.js");
 
 class App extends Component {
   render() {
@@ -36,5 +36,5 @@ class App extends Component {
   }
 }
 
-export default App;
 
+export default App;

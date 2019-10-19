@@ -1,31 +1,29 @@
 import React from 'react';
 
+
 const HomePage = () => (
     <>
 <div className>
     <h1>Welcome</h1>
 </div>
-    <p>
-        
-        
+    <p>        
     </p>
     <p>
-        Donec vel mauris lectus. Etiam nec lectus urna. Sed sodales ultrices dapibus. 
-        Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan 
-        nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus 
-        sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor 
-        interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id 
-        consequat quam. Vivamus accumsan dui in facilisis aliquet.,
+       This is a social portal, for craft beer drinkers to come together, write about beer, discusss beer and hopefully meet up for a beer, or even trade unique beer.  
     </p>
     <p>
-        Etiam nec lectus urna. Sed sodales ultrices dapibus. 
-        Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan 
-        nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus 
-        sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor 
-        interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id 
-        consequat quam. Vivamus accumsan dui in facilisis aliquet.,
+        The objective about this site is to bring a community of friendly beer enthusiasts together to enjoy the finest nectar around. 
     </p>
+    <h3>What you can expect</h3><br></br>
+    <ul>
+        <li>A place to post about beer.</li>
+        <li>Upload photos of your beer. </li>
+        <li>A place to trade beer.</li>
+    </ul>
+    <h4>Sign up to enjoy all the benefits of being a part of beerMe</h4><br></br>
+    <h2>These are the most traded beers of the month</h2>
     </>
 );
+
 
 export default HomePage;

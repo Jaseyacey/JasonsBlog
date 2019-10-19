@@ -11,6 +11,9 @@ const NavBar = () => (
                 <Link to='/about'>About</Link>
             </li>
             <li>
+                <Link to='/RegisterPage'>Register</Link>
+            </li>
+            <li>
                 <Link to='/portfolio'>Portfolio</Link>
             </li>
             <li>
