@@ -12,6 +12,7 @@ import ArticlesPage from './pages/ArticlesPage';
 import NavBar from './NavBar';
 import notFoundPage from './pages/notFoundPage';  
 import 'bootstrap/dist/css/bootstrap.min.css';
+import RegisterPage from './pages/RegisterPage';
 const passport = require("passport");
 const Users = require("./models/User.js");
 
@@ -27,6 +28,7 @@ class App extends Component {
             <Route path="/about" component={AboutPage} />
             <Route path="/ArticlesList" component={ArticlesListPage} />
             <Route path="/articles/:name" component={ArticlesPage} />
+            <Route path="/Registerpage" component={RegisterPage} />
             <Route component= {notFoundPage} />   
           </Switch>         
           </div>
