@@ -69,4 +69,4 @@ app.post('/api/articles/:name/add-comment', (req, res) => {
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname + '/build/index.html'))
 });
-app.listen(8000, () => console.log('The server is tuned in'));
+app.listen(8000, () => console.log('The server is tuned in to 8000'));
