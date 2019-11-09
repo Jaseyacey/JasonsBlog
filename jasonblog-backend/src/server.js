@@ -66,6 +66,8 @@ app.post('/api/articles/:name/add-comment', (req, res) => {
     }, res);
 });
 
+
+
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname + '/build/index.html'))
 });

@@ -1,18 +1,31 @@
-import React, { Component } from 'react'
-import axios from 'axios'
-import { defaultCipherList } from 'constants';
+import React, { Component } from 'react';
+import axios from 'axios';
+import { staticRouter as Router, Route } from "react-router-dom";
 
-class RegistrationPage extends Component {
+
+class RegisterPage extends Component {
     constructor(props) {
       super(props);
-  
+
       this.state = {
         email: "",
         password: "",
         password_confirmation: "",
         registrationErrors: ""
       };
-  
+      function RouteStatus(props) {
+        return (
+          <Route
+            render={({ staticContext }) => {
+              if (staticContext) {
+                staticContext.statusCode = props.statusCode;
+              }
+      
+              return <div>{props.children}</div>;
+            }}
+          />
+        );
+      }
       this.handleSubmit = this.handleSubmit.bind(this);
       this.handleChange = this.handleChange.bind(this);
     }
@@ -28,7 +41,7 @@ class RegistrationPage extends Component {
   
       axios
         .post(
-          "http://localhost:8000/RegistrationPage",
+          "http://localhost:3000/RegisterPage",
           {
             user: {
               email: email,
@@ -36,7 +49,7 @@ class RegistrationPage extends Component {
               password_confirmation: password_confirmation
             }
           },
-          { withCredentials: true }
+          { withCredentials: false }
         )
         .then(response => {
           if (response.data.status === "created") {
@@ -87,4 +100,4 @@ class RegistrationPage extends Component {
     }
   }
 
-  export default RegistrationPage;
+  export default RegisterPage;
